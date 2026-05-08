@@ -1,0 +1,52 @@
+<usecase id="UCX" name="UseCaseName">
+    <primaryActor>ActorName</primaryActor>
+    <goal>Short description of the goal</goal>
+
+    <parameters>
+        <input>
+            <!-- name = parameter name -->
+            <!-- type = datatype -->
+            <!-- required = true/false -->
+            <param name="" type="" required="true"/>
+        </input>
+        <output>
+            <param name="" type=""/>
+        </output>
+    </parameters>
+
+    <preconditions>
+        <condition></condition>
+    </preconditions>
+
+    <postconditions>
+        <condition></condition>
+    </postconditions>
+</usecase>
+
+#voorbeelden
+<preconditions>
+    <condition>Borrower is not yet registered in the system</condition>
+    <condition>System is online and accessible</condition>
+</preconditions>
+
+<postconditions>
+    <condition>A new borrower record exists in the system</condition>
+    <condition>A unique BorrowerId has been generated</condition>
+    <condition>Borrower is marked as active</condition>
+</postconditions>
+
+#Exceptions
+<faults>
+    <fault id="F1">
+        <condition>Borrower has reached the maximum number of active loans</condition>
+        <systemResponse>Loan request is rejected</systemResponse>
+    </fault>
+    <fault id="F2">
+        <condition>Book is already loaned out</condition>
+        <systemResponse>Loan request is rejected</systemResponse>
+    </fault>
+    <fault id="F3">
+        <condition>Borrower has outstanding fines exceeding allowed limit</condition>
+        <systemResponse>Loan request is rejected</systemResponse>
+    </fault>
+</faults>
