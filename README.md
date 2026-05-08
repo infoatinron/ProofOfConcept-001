@@ -1,1 +1,1 @@
-Dit is een CSharp solution die geheel wordt opgezet m.b.v. Google.Gemini.
+Dit is een CSharp solution die wordt opgezet m.b.v. AI. AI is een krachtige co-pilot die de ontwikkelingssnelheid 10x verhoogt, mits geleid door een sterke architectuur (XML Use Cases) en menselijke verificatie.
