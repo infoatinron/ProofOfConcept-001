@@ -1,0 +1,6 @@
+@ProofOfConcept_001.Api_HostAddress = http://localhost:5223
+
+GET {{ProofOfConcept_001.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

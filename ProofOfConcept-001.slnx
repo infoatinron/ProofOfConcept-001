@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="ProofOfConcept-001.Api/ProofOfConcept-001.Api.csproj" />
+  <Project Path="ProofOfConcept-001.Common/ProofOfConcept-001.Common.csproj" />
+  <Project Path="ProofOfConcept-001.Data/ProofOfConcept-001.Data.csproj" />
+  <Project Path="ProofOfConcept-001.Development/ProofOfConcept-001.Development.csproj" />
+  <Project Path="ProofOfConcept-001.Models/ProofOfConcept-001.Models.csproj" />
+  <Project Path="ProofOfConcept-001.Services/ProofOfConcept-001.Services.csproj" />
+</Solution>
