@@ -1,52 +1,55 @@
-<usecase id="UCX" name="UseCaseName">
-    <primaryActor>ActorName</primaryActor>
-    <goal>Short description of the goal</goal>
+<usecaseModel>
+    <usecase id="UCX" name="UseCaseName">
+        <primaryActor>ActorName</primaryActor>
+        <goal>Short description of the goal</goal>
 
-    <parameters>
-        <input>
+        <parameters>
+            <input>
             <!-- name = parameter name -->
             <!-- type = datatype -->
-            <!-- required = true/false -->
-            <param name="" type="" required="true"/>
-        </input>
-        <output>
-            <param name="" type=""/>
-        </output>
-    </parameters>
+            <!-- required = true/false -->            
+                <param name="Email" type="string" required="true"/>
+            </input>
+            <output>
+                <param name="Success" type="bool"/>
+            </output>
+        </parameters>
 
-    <preconditions>
-        <condition></condition>
-    </preconditions>
+        <extends>
+            <extend ref="UC3" condition="IsFirstTimeCustomer" description="ApplyWelcomeDiscount" />
+        </extends> 
 
-    <postconditions>
-        <condition></condition>
-    </postconditions>
-</usecase>
+        <includes>
+            <include ref="UC2" description="Check if email exists" />
+        </includes>
 
-#voorbeelden
-<preconditions>
-    <condition>Borrower is not yet registered in the system</condition>
-    <condition>System is online and accessible</condition>
-</preconditions>
+        <preconditions>
+            <condition>User is not logged in</condition>
+        </preconditions>
 
-<postconditions>
-    <condition>A new borrower record exists in the system</condition>
-    <condition>A unique BorrowerId has been generated</condition>
-    <condition>Borrower is marked as active</condition>
-</postconditions>
+        <postconditions>
+            <condition>Account is created</condition>
+        </postconditions>
 
-#Exceptions
-<faults>
-    <fault id="F1">
-        <condition>Borrower has reached the maximum number of active loans</condition>
-        <systemResponse>Loan request is rejected</systemResponse>
-    </fault>
-    <fault id="F2">
-        <condition>Book is already loaned out</condition>
-        <systemResponse>Loan request is rejected</systemResponse>
-    </fault>
-    <fault id="F3">
-        <condition>Borrower has outstanding fines exceeding allowed limit</condition>
-        <systemResponse>Loan request is rejected</systemResponse>
-    </fault>
-</faults>
+        <faults>
+        <fault id="F1">
+            <condition>Borrower has reached the maximum number of active loans</condition>
+            <systemResponse>Loan request is rejected</systemResponse>
+        </fault>
+        <fault id="F2">
+            <condition>Book is already loaned out</condition>
+            <systemResponse>Loan request is rejected</systemResponse>
+        </fault>
+        <fault id="F3">
+            <condition>Borrower has outstanding fines exceeding allowed limit</condition>
+            <systemResponse>Loan request is rejected</systemResponse>
+        </fault>
+        </faults>
+
+    </usecase>
+
+    <usecase id="UC2" name="ValidateEmail"></usecase>
+    <usecase id="UC3" name="ApplyDiscount"></usecase>
+</usecaseModel>
+
+
