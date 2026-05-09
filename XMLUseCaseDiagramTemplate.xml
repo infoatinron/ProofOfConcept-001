@@ -52,4 +52,31 @@
     <usecase id="UC3" name="ApplyDiscount"></usecase>
 </usecaseModel>
 
+<!--Basisscenario en alternatieve scenario's-->
+<usecase id="UC1" name="BorrowBook">
+    <steps>
+        <mainFlow>
+            <step order="1">System validates Borrower identity and status.</step>
+            <step order="2">System checks availability of the requested Book.</step>
+            <step order="3">System creates a new Loan record.</step>
+            <step order="4">System updates Book status to 'Loaned'.</step>
+        </mainFlow>
 
+        <alternativeFlows>
+            <flow id="AF1" baseStep="1" title="Invalid Borrower">
+                <step order="1">System triggers Fault F3 (Fines exceeded).</step>
+                <step order="2">System terminates use case.</step>
+            </flow>
+            <flow id="AF2" baseStep="2" title="Book Unavailable">
+                <step order="1">System triggers Fault F2 (Already loaned out).</step>
+                <step order="2">System offers to place a reservation.</step>
+            </flow>
+        </alternativeFlows>
+    </steps>
+</usecase>
+
+<!--XML Element,Vertaling naar C#
+<preconditions>,Ik genereer Guard Clauses aan het begin van je service methode (bijv. if (!condition) throw new Exception();).
+<postconditions>,Dit gebruik ik voor Unit Tests of als commentaar/logging na de _unitOfWork.Complete().
+<include>,"Een verplichte aanroep van de service-methode die bij ref=""UC2"" hoort."
+<extend>,"Een if-statement rondom de aanroep van de service-methode van ref=""UC3""."-->
