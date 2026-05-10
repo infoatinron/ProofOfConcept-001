@@ -1,9 +1,9 @@
 @echo off
-cd "[placeholder]"
+cd "[location@filesystem]"
 powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -File "\ProofOfConcept-001.ps1"
 
 # Stel de variabelen in
-$root = "[placeholder]"
+$root = "[location@filesystem]"
 $projectName = "ProofOfConcept-001"
 
 # Ga naar de root (zorg dat deze map bestaat)
