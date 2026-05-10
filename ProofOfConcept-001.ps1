@@ -1,9 +1,9 @@
 @echo off
-cd "C:\Users\ericg\source\repos\dev\ProofOfConcept-001"
+cd "[placeholder]"
 powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -File "\ProofOfConcept-001.ps1"
 
 # Stel de variabelen in
-$root = "C:\Users\ericg\source\repos\dev\ProofOfConcept-001"
+$root = "[placeholder]"
 $projectName = "ProofOfConcept-001"
 
 # Ga naar de root (zorg dat deze map bestaat)
@@ -57,5 +57,5 @@ dotnet add "$projectName.Services" package Microsoft.EntityFrameworkCore.Tools -
 # Data
 dotnet add "$projectName.Data" package Microsoft.EntityFrameworkCore.SqlServer --version $efVersion
 
-Write-Host "--- Solution Setup is voltooid, Eric! ---" -ForegroundColor Green
+Write-Host "--- Solution Setup is voltooid ---" -ForegroundColor Green
 Write-Host "De mappen Entities en DTOs zijn nu zichtbaar in Visual Studio."
