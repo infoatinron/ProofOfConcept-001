@@ -1,0 +1,59 @@
+<usecaseModel "Het use case model bevat alle relevante use cases voor het systeem die in het diagram zijn opgenomen.">
+    <usecase id="UC14" name="Inloggen">
+        <primaryActor>Bezoeker</primaryActor>
+        <goal>Toegang krijgen tot het systeem via verificatie van inloggegevens.</goal>
+
+        <parameters>
+            <input "Inloggegevens">
+                <param name="Gebruikersnaam" type="string" required="true"/>
+                <param name="Wachtwoord" type="string" required="true"/>
+            </input>
+            <output "Gebruikersprofiel">
+                <!--Het Gebruikersprofiel is feitelijk de User-->
+                <param name="Gebruikersnaam" type="string"/>
+                <param name="Straatadres" type="string"/>
+                <param name="Huisnummer" type="int"/>
+                <param name="Postcode" type="string"/>
+                <param name="Woonplaats" type="string"/>
+                <param name="Productlijst" type="List<ProductDTO>"/>
+            </output>
+        </parameters>
+
+        <steps>
+            <mainFlow>
+                <step order="1">Gebruiker logt in met gebruikersnaam en wachtwoord.</step>
+                <step order="2">Systeem verifieert gegevens en haalt gebruikersprofiel op.</step>
+                <step order="3">Systeem haalt de lijst met beschikbare producten op.</step>
+                <step order="4">Systeem toont het overzicht met beschikbare producten.</step>
+            </mainFlow>
+
+            <alternativeFlows>
+                <flow id="AF1" baseStep="2" title="Ongeldige combinatie">
+                    <step order="1">Systeem triggert Fault F1.</step>
+                </flow>
+                <flow id="AF2" baseStep="2" title="Onbekende gebruiker">
+                    <step order="1">Systeem triggert Fault F2.</step>
+                </flow>
+            </alternativeFlows>
+        </steps>
+
+        <faults>
+            <fault id="F1">
+                <condition>Combinatie gebruikersnaam en wachtwoord is onjuist.</condition>
+                <systemResponse>De combinatie gebruikersnaam en wachtwoord is niet bekend.</systemResponse>
+            </fault>
+            <fault id="F2">
+                <condition>Gebruikersnaam niet gevonden in systeem.</condition>
+                <systemResponse>Gebruiker is niet bekend, registreer u eerst.</systemResponse>
+            </fault>
+        </faults>
+
+        <postconditions>
+            <condition>Gebruiker is ingelogd.</condition>
+        </postconditions>
+    </usecase>
+
+    <!--Vervolgen met alle andere use cases-->
+</usecaseModel>
+
+
