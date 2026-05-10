@@ -1,5 +1,5 @@
 <usecaseModel "Het use case model bevat alle relevante use cases voor het systeem die in het diagram zijn opgenomen.">
-    <usecase id="UC14" name="Inloggen">
+    <usecase id="UC23" name="Inloggen">
         <primaryActor>Bezoeker</primaryActor>
         <goal>Toegang krijgen tot het systeem via verificatie van inloggegevens.</goal>
 
