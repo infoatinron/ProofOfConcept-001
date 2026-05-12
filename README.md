@@ -19,6 +19,7 @@ ProofOfConcept-001/<br>
 ├── ProofOfConcept-001.Services     (Application/Business Logic)<br>
 
 <b>Aanpak SDLC</b><br>
+=====================<br>
 1. Use Case Diagram exporteren naar XML;<br>
 2. Individuele use cases schrijven in XML;<br>
 3. Gemini genereert hieruit alle interfaces, classes, entities, DTO's. de controller en de UnitOfWork;<br>
