@@ -1,5 +1,5 @@
 
-<b>Software Development Lifecycle (SDLC) met behulp van Gemini AI</bs>
+<b>Software Development Lifecycle (SDLC) met behulp van Gemini AI</b>
 
 
 **ProofOfConcept-001**<br>
