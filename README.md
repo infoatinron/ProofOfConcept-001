@@ -1,3 +1,7 @@
+
+<u>Software Development Lifecycle (SDLC) met behulp van Gemini AI</u>
+
+
 **ProofOfConcept-001**<br>
 ====================<br>
 ProofOfConcept-001 is een CSharp solution die met behulp van AI wordt ontwikkeld, dit om in een proof of concept aan te tonen dat gebruik van AI een krachtige co-pilot is die de ontwikkelingssnelheid 10x verhoogt, mits geleid door een sterke software architectuur en menselijke verificatie.
