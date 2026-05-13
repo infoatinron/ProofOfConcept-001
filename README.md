@@ -26,7 +26,7 @@ ProofOfConcept-001/<br>
 4. Gemini genereert de unittests [2];<br>
 5. Gemini genereert de functionele tests [3].
 
-<b>Frameworks</b><br>
+<b>Frameworks zoals</b><br>
 =====================<br>
 [1] ORM-EF, LINQ<br>
 [2] N-Unit, X-Unit<br>
