@@ -1,0 +1,10 @@
+Feature: Een testspecificatie die een browser aanstuurt
+
+Scenario: Zoekopdracht uitvoeren via Google
+	Gegeven ik een browser open
+	En ik navigeer naar 'http://www.google.nl'
+	En ik druk op de 'Alles afwijzen' knop
+
+	Als ik in het formulierveld 'Zoek' de tekst 'wat is RTDT' invul
+	En ik op 'Zoek'-knop klik
+	Dan is de URL van de browser gelijk aan 'https://uwv.atlassian.net/wiki/spaces'
