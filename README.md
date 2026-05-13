@@ -20,11 +20,12 @@ ProofOfConcept-001/<br>
 
 <b>Aanpak SDLC</b><br>
 =====================<br>
-1. Use Case Diagram exporteren naar XML;<br>
-2. Individuele use cases schrijven in XML;<br>
-3. Gemini genereert hieruit alle interfaces, classes, entities, DTO's. de controller en de UnitOfWork volgens het juiste pattern [1];<br>
-4. Gemini genereert de unittests [2];<br>
-5. Gemini genereert de functionele tests [3].
+1. Opzetten applicatiestructuur (clean architectuur) met PowerShell;<br>
+2. Use Case Diagram exporteren naar XML;<br>
+3. Individuele use cases schrijven in XML;<br>
+4. Gemini genereert hieruit alle interfaces, classes, entities, DTO's. de controller en de UnitOfWork volgens het juiste pattern [1];<br>
+5. Gemini genereert de unittests [2];<br>
+6. Gemini genereert de functionele tests [3].
 
 <b>Frameworks zoals</b><br>
 =====================<br>
