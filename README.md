@@ -22,7 +22,12 @@ ProofOfConcept-001/<br>
 =====================<br>
 1. Use Case Diagram exporteren naar XML;<br>
 2. Individuele use cases schrijven in XML;<br>
-3. Gemini genereert hieruit alle interfaces, classes, entities, DTO's. de controller en de UnitOfWork volgens het juiste pattern;<br>
-4. Gemini genereert de unittests;<br>
-5. Gemini genereert de functionele tests m.b.v. Robot Framework.
+3. Gemini genereert hieruit alle interfaces, classes, entities, DTO's. de controller en de UnitOfWork volgens het juiste pattern [1];<br>
+4. Gemini genereert de unittests [2];<br>
+5. Gemini genereert de functionele tests [3].
 
+<b>Frameworks</b><br>
+=====================<br>
+[1] ORM-EF, LINQ<br>
+[2] N-Unit, X-Unit<br>
+[3] Robot Framework
