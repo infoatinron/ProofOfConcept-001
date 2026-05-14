@@ -29,6 +29,8 @@ ProofOfConcept-001/<br>
 6. Gemini genereert de functionele tests [3];<br>
 7. Deployment via GitHub Actions
 
+Uitdaging: iteratieve ontwikkeling en refactoring.
+
 <b>Frameworks zoals</b><br>
 =====================<br>
 [1] ORM-EF, LINQ<br>
