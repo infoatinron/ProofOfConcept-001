@@ -18,9 +18,10 @@ ProofOfConcept-001/<br>
 ├── ProofOfConcept-001.Models       (Domain Entities/Models)<br>
 ├── ProofOfConcept-001.Services     (Application/Business Logic)<br>
 
-<b>Aanpak SDLC</b><br>
+<b>Aanpak SDLC MVP</b><br>
 =====================<br>
-1. Opzetten applicatiestructuur (clean architectuur) met PowerShell;<br>
+1. Opzetten skeleton applicatiestructuur (clean architectuur) met PowerShell;<br>
+2. Via bash code pushen naar de master branch in GitHub;<br>
 2. Use Case Diagram exporteren naar XML;<br>
 3. Individuele use cases schrijven in XML;<br>
 4. Gemini genereert hieruit alle interfaces, classes, entities, DTO's. de controller en de UnitOfWork volgens het juiste pattern [1];<br>
