@@ -3,13 +3,13 @@
 
 
 **ProofOfConcept-001**<br>
---------------------<br>
+----------------------<br>
 ProofOfConcept-001 is een CSharp solution die met behulp van AI wordt ontwikkeld, dit om in een proof of concept aan te tonen dat gebruik van AI een krachtige co-pilot is die de ontwikkelingssnelheid 10x verhoogt, mits geleid door een sterke software architectuur en menselijke verificatie.
 
 ProofOfConcept-001 is een WebAPI solution met clean architecture, de juiste patterns, interfaces, DTO's en de UnitOfWork. Het use case diagram en de individuele de use cases zetten we in XML om en voeden we aan AI.AI genereert alle classes, interfaces, de logica, de entities en de controller en plaatst ze in de juiste application classlibrary.
 
 **Applicatiestructuur**<br>
-=====================<br>
+----------------------<br>
 ProofOfConcept-001/<br>
 ├── ProofOfConcept-001.Api          (Presentation Layer)<br>
 ├── ProofOfConcept-001.Common       (Shared utilities/types)<br>
@@ -19,7 +19,7 @@ ProofOfConcept-001/<br>
 ├── ProofOfConcept-001.Services     (Application/Business Logic)<br>
 
 <b>Aanpak SDLC MVP</b><br>
-=====================<br>
+----------------------<br>
 1. Opzetten skeleton applicatiestructuur (clean architectuur) met PowerShell;<br>
 2. Via bash code pushen naar de master branch in GitHub;<br>
 2. Use Case Diagram exporteren naar XML;<br>
@@ -32,7 +32,7 @@ ProofOfConcept-001/<br>
 **Uitdaging**: iteratieve ontwikkeling en refactoring.
 
 <b>Frameworks zoals</b><br>
-=====================<br>
+----------------------<br>
 [1] ORM-EF, LINQ<br>
 [2] N-Unit, X-Unit<br>
 [3] Robot Framework of een ander functioneel testframework
