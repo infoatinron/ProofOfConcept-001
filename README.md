@@ -8,7 +8,7 @@ ProofOfConcept-001 is een CSharp solution die met behulp van AI wordt ontwikkeld
 <img width="100" height="50" alt="image" src="https://github.com/user-attachments/assets/c0f049fe-3e9a-42d3-9f13-9c659bbc8fca" /> <img width="100" height="50" alt="image" src="https://github.com/user-attachments/assets/93ec7779-2c0b-41ab-ac3b-ed427dd0b4f1" /> <img width="100" height="50" alt="image" src="https://github.com/user-attachments/assets/8f3ab47d-635c-4815-9648-746b2149c88e" /> 
 
 
-ProofOfConcept-001 is een WebAPI solution met clean architecture, de juiste patterns, interfaces, DTO's en de UnitOfWork. Het use case diagram en de individuele de use cases zetten we in XML om en voeden we aan AI.AI genereert alle classes, interfaces, de logica, de entities en de controller en plaatst ze in de juiste application classlibrary.
+ProofOfConcept-001 is een WebAPI solution met clean architecture, de juiste patterns, interfaces, DTO's en de UnitOfWork. Het use case diagram en de individuele de use cases zetten we in XML om en voeden we aan AI. AI genereert alle classes, interfaces, de logica, de entities en de controller en plaatst ze in de juiste application classlibrary.
 
 **Applicatiestructuur**<br>
 ----------------------<br>
