@@ -5,6 +5,8 @@
 **ProofOfConcept-001**<br>
 ----------------------<br>
 ProofOfConcept-001 is een CSharp solution die met behulp van AI wordt ontwikkeld, dit om in een proof of concept aan te tonen dat gebruik van AI een krachtige co-pilot is die de ontwikkelingssnelheid 10x verhoogt, mits geleid door een sterke software architectuur en menselijke verificatie. Gebruik wordt gemaakt van o.a. Gemini, GitHub Colpilot en Proton Lumo via cross-examnining.<br> 
+<img width="70" height="50" alt="image" src="https://github.com/user-attachments/assets/c0f049fe-3e9a-42d3-9f13-9c659bbc8fca" />
+
 <img width="70" height="50" alt="image" src="https://github.com/user-attachments/assets/8f3ab47d-635c-4815-9648-746b2149c88e" />
 
 
